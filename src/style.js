@@ -1,10 +1,10 @@
-import React, {Fragment} from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './style'
+/**
+ * 全局样式
+ * @param res
+ */
 import {createGlobalStyle} from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+createGlobalStyle`
     /* 清除内外边距 */
     body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
     dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
@@ -68,12 +68,3 @@ const GlobalStyle = createGlobalStyle`
     /* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
     html { overflow-y: scroll; }
 `;
-
-ReactDOM.render(
-    <Fragment>
-        <GlobalStyle/>
-        <App />
-    </Fragment>,
-    document.getElementById('root')
-);
-
