@@ -31,6 +31,7 @@ export const Nav = styled.div`
     width: 960px;
     height: 100%;
     box-sizing: border-box;
+    padding-right: 35px;
     margin:0 auto;
 `;
 
@@ -39,12 +40,18 @@ export const NavItem = styled.div`
     padding: 0 15px;
     font-size: 17px;
     color: #333;
+    .Aa {
+        font-size: 22px;
+    }
     &.left {
         float: left;
     }
     &.right {
         float: right;
         color: #969696;
+    }
+    &.login {
+        font-size: 15px;
     }
     &.active {
         color: #ea6f5a;
@@ -131,6 +138,7 @@ export const SearchInfoSwitch = styled.div`
 export const SearchInfoList = styled.div`
   overflow: hidden;
 `;
+
 export const SearchInfoItem = styled.a`
   display: block;
   float: left;
